@@ -120,9 +120,7 @@ export const App = () => {
     setLoading(true);
 
     setLoading(false);
-    window.location.replace(
-      'alfabank://multistep-route?fromModule=FORM&stepNumber=0&alias=invest-long-term-savings-open-alias&prefilledDataID=1001&version=2',
-    );
+    window.location.replace('alfabank://longread?endpoint=v1/adviser/longreads/55398');
   };
 
   const handleBlurInputCalc1 = () => {
@@ -357,7 +355,7 @@ export const App = () => {
               color="secondary"
               onClick={() => {
                 window.gtag('event', '5275_income_var4');
-                window.location.replace('alfabank://longread?endpoint=v1/adviser/longreads/55398');
+                window.location.replace('alfabank://longread?endpoint=v1/adviser/longreads/46688');
               }}
               style={{
                 color: '#2A77EF',
